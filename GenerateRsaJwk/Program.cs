@@ -18,8 +18,8 @@ namespace GenerateRsaJwk
             Console.WriteLine("GenerateRsaJwk Console App");
             Console.WriteLine("Generating 2048 RSA Key");
             IRsaKeyGenerator generator = new RsaKeyGenerator();
-            var length = "imkcWAns5fwoW5B6lleOAxNDwUT8OwsBFUjPnOwbFhaP9L5UMzTZB70nsiGuUdmy".ToCharArray().Length;
-            var clientLength = "P9L5UjPnOwbFha70nMzTZBFUiGuUdmy".ToCharArray().Length;
+            var length = "<INSERT_HERE>".ToCharArray().Length;
+            var clientLength = "<INSERT_HERE>".ToCharArray().Length;
             RsaSecurityKey key = generator.GenerateKey(2048, RandomKey(length));
 
             Console.WriteLine($"Generated RSA Key with size: {key.KeySize}");
